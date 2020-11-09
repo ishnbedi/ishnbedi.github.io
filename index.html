@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download your fee slip.</title>
+</head>
+
+<body>
+    <form action="fees" method="get">
+
+        Admn No: <input type="text" name="fname" id="fname"><br />
+
+        <br>
+        <span id="updTe">
+
+        </span>
+        <input type="button" value="Submit" onClick="pr()">
+
+
+    </form>
+    <footer>
+        
+    </footer>
+    <script>
+        function pr() {
+            let k = document.getElementById('fname').value;
+
+            alert("Admn no is" + " " + k)
+            console.log(k)
+            window.location.href = k + ".pdf";
+        }
+    </script>
+
+</body>
+
+</html>
