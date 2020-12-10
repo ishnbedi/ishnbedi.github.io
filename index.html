@@ -10,18 +10,20 @@
 </head>
 
 <body>
-  <p> Please input the admn no two times as asked and you have to press two submit buttons<br>one in the google form and other one after that. </p>
-    <form action="fees" method="get">
+  
+ 
+       <script type="text/javascript">var submitted=false;</script>
+  
 
-        Admn No: <input type="text" name="fname" id="fname"><br />
-
-        <br>
-        <span id="updTe">
-
-        </span>
-      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeF3sOejrKtoWeTWimqnf_7AST6CjbvkiF3Smo_RcwOGpxoaw/viewform?embedded=true" width="640" height="700" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-        <input type="button" value="Submit" onClick="pr()">
-
+    <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfu8WIW2EIyyNnRX8Fc2taYdWgYNTIZyngIeg5gpUy6AonVjA/formResponse" method="post" target="hidden_iframe"
+    onsubmit="submitted=true;">
+          <label>Name</label>
+          <input name="entry.1580016837" type="text" placeholder="Name" />
+          <br>
+          <label>Admn No</label>
+          <input name="entry.1493371234" type="text" placeholder="ADMN NO"/>
+          <br>
+          <input type="submit" value="Send" onClick="pr()"/>
 
     </form>
     <footer>
@@ -29,9 +31,7 @@
     </footer>
     <script>
         function pr() {
-            let k = document.getElementById('fname').value;
-
-            alert("Admn no is" + " " + k)
+            let k = document.getElementById('fname').value;   
             console.log(k)
             window.location.href = k + ".pdf";
         }
