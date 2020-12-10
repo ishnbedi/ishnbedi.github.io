@@ -15,27 +15,25 @@
        <script type="text/javascript">var submitted=false;</script>
   
 
-    <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfu8WIW2EIyyNnRX8Fc2taYdWgYNTIZyngIeg5gpUy6AonVjA/formResponse" method="post" target="hidden_iframe"
-    onsubmit="submitted=true;">
+    <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfu8WIW2EIyyNnRX8Fc2taYdWgYNTIZyngIeg5gpUy6AonVjA/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true;">
           <label>Name</label>
           <input name="entry.1580016837" type="text" placeholder="Name" />
           <br>
           <label>Admn No</label>
           <input name="entry.1493371234" type="text" placeholder="ADMN NO"/>
           <br>
-          <input type="submit" value="Send" onClick="pr()"/>
+          <input type="submit" value="Send" />
 
     </form>
     <footer>
         
     </footer>
-    <script>
-        function pr() {
-            let k = document.getElementById('fname').value;   
+  <script type="text/javascript">var submitted=false;let k = document.getElementById('fname').value;   
             console.log(k)
-            window.location.href = k + ".pdf";
-        }
-    </script>
+            window.location.href = k + ".pdf";</script>
+<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" 
+onload="if(submitted) {window.location=k+ '.pdf' ;}"></iframe>
+
 
 </body>
 
